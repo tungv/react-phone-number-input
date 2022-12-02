@@ -39,7 +39,7 @@ export type Props<InputComponentProps> = PropsWithoutSmartCaret<InputComponentPr
 	smartCaret?: boolean;
 }
 
-type PhoneInputComponentType<InputComponentProps = DefaultInputComponentProps> = (props: Props<InputComponentProps>) => JSX.Element;
+type PhoneInputComponentType = <InputComponentProps = DefaultInputComponentProps>(props: Props<InputComponentProps>) => JSX.Element;
 
 declare const PhoneInput: PhoneInputComponentType;
 
