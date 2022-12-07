@@ -103,7 +103,7 @@ export function CountrySelectWithIcon({
 					aspectRatio={unicodeFlags ? 1 : undefined}/>
 			}
 
-			<Arrow/>
+			{Arrow ? <Arrow/> : <div className="PhoneInputCountrySelectArrow"/>}
 		</div>
 	)
 }
@@ -117,10 +117,6 @@ CountrySelectWithIcon.propTypes = {
 
 	// Set to `true` to render Unicode flag icons instead of SVG images.
 	unicodeFlags: PropTypes.bool
-}
-
-CountrySelectWithIcon.defaultProps = {
-	arrowComponent: () => <div className="PhoneInputCountrySelectArrow"/>
 }
 
 function getSelectedOption(options, value) {
