@@ -85,7 +85,7 @@ export function CountrySelectWithIcon({
 				{...rest}
 				value={value}
 				options={options}
-				className={classNames('PhoneInputCountrySelect', className)}/>
+				className={classNames('PhoneInputCountrySelect', className)} />
 
 			{/* Either a Unicode flag icon. */}
 			{(unicodeFlags && value) &&
@@ -100,10 +100,10 @@ export function CountrySelectWithIcon({
 					aria-hidden
 					country={value}
 					label={selectedOption && selectedOption.label}
-					aspectRatio={unicodeFlags ? 1 : undefined}/>
+					aspectRatio={unicodeFlags ? 1 : undefined} />
 			}
 
-			{Arrow ? <Arrow/> : <div className="PhoneInputCountrySelectArrow"/>}
+			{Arrow ? <Arrow /> : <div className="PhoneInputCountrySelectArrow" />}
 		</div>
 	)
 }
@@ -113,7 +113,7 @@ CountrySelectWithIcon.propTypes = {
 	iconComponent: PropTypes.elementType,
 
 	// Select arrow component.
-	arrowComponent: PropTypes.elementType.isRequired,
+	arrowComponent: PropTypes.elementType,
 
 	// Set to `true` to render Unicode flag icons instead of SVG images.
 	unicodeFlags: PropTypes.bool
