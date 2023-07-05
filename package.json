@@ -1,5 +1,5 @@
 {
-  "name": "react-phone-number-input",
+  "name": "@tungv/react-phone-number-input",
   "version": "3.2.13",
   "description": "Telephone number input React component",
   "main": "min/index.cjs",
